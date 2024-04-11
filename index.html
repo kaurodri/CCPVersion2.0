@@ -1,0 +1,105 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> CCP - DMO </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <div class="grupo-total">
+
+                <div class="grupo-tabela">
+                    <div class="titulo-tabela">
+                        <p class="titulocal">Calculadora de Clon Perfeito</p>
+                    </div>
+
+                    <div class="tabela-elementos">
+
+                        <div class="caixa-cima">
+
+                            <div class="caixa-selecao-com-texto">
+                                <div class="caixa-selecao1">
+                                    <select class="sele1" id="opcao">
+                                        <option value="AT">AT</option>
+                                        <option value="CT">CT</option>
+                                        <option value="BL">BL</option>
+                                        <option value="EV">EV</option>
+                                        <option value="HP">HP</option>
+                                    </select>
+                                </div>
+                                <div class="caixa-selecao2">
+                                    <select class="sele2" id="potencia">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="caixa-meiobaixo">
+
+                            <div class="caixa-meio">
+                                <div class="caixa-selecao-com-texto">
+                                    <div class="attBase">
+                                        <img src="banco-imagens/att-at.png" alt="Atributo Base" id="baseatt">
+                                    </div>
+                                    <p id="textoClon" class="txtClon">Ataque</p>
+                                </div>
+                            </div>
+
+                            <div class="caixa-baixo">
+
+                                <br>
+                                <div class="caixa-selecao-com-imagem">
+                                    <div class="imagem">
+                                        <img src="banco-imagens/base.png" alt="Base do atributo">
+                                    </div>
+                                    <input class="campo1" type="number" id="valor1" value="0">
+                                </div>
+                                <br>
+
+                                <div class="caixa-clon2">
+                                    <div class="caixa-selecao-com-imagem2">
+                                        <div class="imagem2">
+                                            <img src="banco-imagens/clon.png" alt="Clon do atributo">
+                                        </div>
+                                        <div class="numClon">
+                                            <img src="banco-imagens/clon-1.png" alt="Clon do atributo" id="clonNum">
+                                        </div>
+                                        <input class="campo2" type="number" id="valor2" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="botao-caixa">
+                            <tr>
+                                <td><button class="botao" onclick="calcular()">Calcular</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</hmtl>
