@@ -149,7 +149,7 @@ function calcular() {
         } if (opcao.value == "6") {
             textoClon.src = "banco-imagens/clon-6.png";
         } if (opcao.value == "7") {
-            textoClon.src = "banco-imagens/clon-null.png";
+            textoClon.src = "banco-imagens/clon-7.png";
         } if (opcao.value == "8") {
             textoClon.src = "banco-imagens/clon-8.png";
         } if (opcao.value == "9") {
