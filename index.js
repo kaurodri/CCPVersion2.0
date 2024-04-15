@@ -115,74 +115,72 @@ function calcular() {
     });
 }
 
-{
-    document.getElementById("opcao").addEventListener("change", function () {
-        if (document.getElementById("opcao").value == "AT") {
-            document.getElementById("textoClon").textContent = "Ataque";
-        } if (document.getElementById("opcao").value == "CT") {
-            document.getElementById("textoClon").textContent = "Golpe Crítico";
-        } if (document.getElementById("opcao").value == "BL") {
-            document.getElementById("textoClon").textContent = "Bloquear";
-        } if (document.getElementById("opcao").value == "EV") {
-            document.getElementById("textoClon").textContent = "Evitar";
-        } if (document.getElementById("opcao").value == "HP") {
-            document.getElementById("textoClon").textContent = "HP Max";
-        }
-    })
+{ //Atualizar texto do atributo. 
+    let opcao = document.getElementById("opcao");
+    let textoClon = document.getElementById("textoClon");
+
+    const atributos = { //mapeamento
+        "AT" : "Ataque",
+        "CT" : "Golpe Crítico",
+        "BL" : "Bloquear",
+        "EV" : "Evitar",
+        "HP" : "HP Max"
+    }
+
+    function atualizarAtt() {
+        const valor = opcao.value;
+        textoClon.textContent = atributos[valor];
+    }
+
+    opcao.addEventListener("change", atualizarAtt);
 }
 
-{
+{ //Atualizar imagem do clon.
     let opcao = document.getElementById("potencia");
     var textoClon = document.getElementById("clonNum");
 
-    opcao.addEventListener("change", function () {
-        if (opcao.value == "1") {
-            textoClon.src = "banco-imagens/clon-1.png";
-        } if (opcao.value == "2") {
-            textoClon.src = "banco-imagens/clon-2.png";
-        } if (opcao.value == "3") {
-            textoClon.src = "banco-imagens/clon-3.png";
-        } if (opcao.value == "4") {
-            textoClon.src = "banco-imagens/clon-4.png";
-        } if (opcao.value == "5") {
-            textoClon.src = "banco-imagens/clon-5.png";
-        } if (opcao.value == "6") {
-            textoClon.src = "banco-imagens/clon-6.png";
-        } if (opcao.value == "7") {
-            textoClon.src = "banco-imagens/clon-7.png";
-        } if (opcao.value == "8") {
-            textoClon.src = "banco-imagens/clon-8.png";
-        } if (opcao.value == "9") {
-            textoClon.src = "banco-imagens/clon-null.png";
-        } if (opcao.value == "10") {
-            textoClon.src = "banco-imagens/clon-10.png";
-        } if (opcao.value == "11") {
-            textoClon.src = "banco-imagens/clon-null.png";
-        } if (opcao.value == "12") {
-            textoClon.src = "banco-imagens/clon-null.png";
-        } if (opcao.value == "13") {
-            textoClon.src = "banco-imagens/clon-null.png";
-        } if (opcao.value == "14") {
-            textoClon.src = "banco-imagens/clon-null.png";
-        } if (opcao.value == "15") {
-            textoClon.src = "banco-imagens/clon-15.png";
-        } 
-    })
+    const clons = { //mapeamento
+        "1": "banco-imagens/clon-1.png",
+        "2": "banco-imagens/clon-2.png",
+        "3": "banco-imagens/clon-3.png",
+        "4": "banco-imagens/clon-4.png",
+        "5": "banco-imagens/clon-5.png",
+        "6": "banco-imagens/clon-6.png",
+        "7": "banco-imagens/clon-7.png",
+        "8": "banco-imagens/clon-8.png",
+        "9": "banco-imagens/clon-null.png",
+        "10": "banco-imagens/clon-10.png",
+        "11": "banco-imagens/clon-null.png",
+        "12": "banco-imagens/clon-null.png",
+        "13": "banco-imagens/clon-null.png",
+        "14": "banco-imagens/clon-null.png",
+        "15": "banco-imagens/clon-15.png"
+    };
+
+    function atualizarClon() {
+        const valor = opcao.value;
+        textoClon.src = clons[valor];
+    }
+
+    opcao.addEventListener("change", atualizarClon);
 }  
 
-{
+{ //Atualizar imagem do atributo.
+    let opcao = document.getElementById("opcao");
+    let baseAtt = document.getElementById("baseatt");
 
-    document.getElementById("opcao").addEventListener("change", function () {
-        if (document.getElementById("opcao").value == "AT") {
-            document.getElementById("baseatt").src = "banco-imagens/att-at.png";
-        } if (document.getElementById("opcao").value == "CT") {
-            document.getElementById("baseatt").src = "banco-imagens/att-ct.png";
-        } if (document.getElementById("opcao").value == "BL") {
-            document.getElementById("baseatt").src = "banco-imagens/att-bl.png";
-        } if (document.getElementById("opcao").value == "EV") {
-            document.getElementById("baseatt").src = "banco-imagens/att-ev.png";
-        } if (document.getElementById("opcao").value == "HP") {
-            document.getElementById("baseatt").src = "banco-imagens/att-hp.png";
-        }
-    })
+    const atributo = { //mapeamento
+        "AT" : "banco-imagens/att-at.png",
+        "CT" : "banco-imagens/att-ct.png",
+        "BL" : "banco-imagens/att-bl.png",
+        "EV" : "banco-imagens/att-ev.png",
+        "HP" : "banco-imagens/att-hp.png"
+    }
+
+    function atualizarAtt() {
+        const valor = opcao.value;
+        baseAtt.src = atributo[valor]; 
+    }
+
+    opcao.addEventListener("change", atualizarAtt)
 }
