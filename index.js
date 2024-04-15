@@ -148,7 +148,7 @@ function calcular() {
         "6": "banco-imagens/clon-6.png",
         "7": "banco-imagens/clon-7.png",
         "8": "banco-imagens/clon-8.png",
-        "9": "banco-imagens/clon-null.png",
+        "9": "banco-imagens/clon-9.png",
         "10": "banco-imagens/clon-10.png",
         "11": "banco-imagens/clon-null.png",
         "12": "banco-imagens/clon-null.png",
